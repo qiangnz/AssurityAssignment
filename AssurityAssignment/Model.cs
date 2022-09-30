@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssurityAssignment
 {
-    public class CriteriaContents
+    public class Contents
     {
         public string Name { get; set; }
 
