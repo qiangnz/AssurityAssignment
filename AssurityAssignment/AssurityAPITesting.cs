@@ -21,14 +21,57 @@ namespace AssurityAssignment
             return apiContents;
         }
 
-        //Acceptance Criteria Validation
+        //Acceptance Criteria Name Validation
         [TestMethod]
-        public void AcceptanceCriteria()
+        public void CriteriaName()
         {
             //Arrange
             //Set the value of sample data used in the method being tested
             string criteriaName = "Badges";
-            bool criteriaCanRelist=true;
+
+            //Action
+            //Invoke the method being tested
+            Contents apiContents = new Contents();
+            //Call method get API contents
+            GetAPIContents();
+            var jsonContents=GetAPIContents();
+            apiContents = JsonConvert.DeserializeObject<Contents>(jsonContents);
+
+            //Assert
+            //Verify the tested method behaves as expected
+            Assert.AreEqual(criteriaName, apiContents.Name);
+        }
+
+        //Acceptance Criteria CanRelist Validation
+        [TestMethod]
+        public void CriteriaCanReliste()
+        {
+            //Arrange
+            //Set the value of sample data used in the method being tested
+            bool criteriaCanRelist = true;
+
+
+            //Action
+            //Invoke the method being tested
+            Contents apiContents = new Contents();
+
+            //Call method get API contents
+            GetAPIContents();
+            var jsonContents = GetAPIContents();
+            apiContents = JsonConvert.DeserializeObject<Contents>(jsonContents);
+
+            //Assert
+            //Verify the tested method behaves as expected
+            Assert.AreEqual(criteriaCanRelist, apiContents.CanRelist);
+        }
+
+
+        //Acceptance Criteria Promotions Validation
+        [TestMethod]
+        public void CriteriaPromotions()
+        {
+            //Arrange
+            //Set the value of sample data used in the method being tested
             string criteriaPromName = "Feature";
             string criteriaPromDescription = "Better position in category";
 
@@ -39,7 +82,7 @@ namespace AssurityAssignment
 
             //Call method get API contents
             GetAPIContents();
-            var jsonContents=GetAPIContents();
+            var jsonContents = GetAPIContents();
             apiContents = JsonConvert.DeserializeObject<Contents>(jsonContents);
 
             //Set "Promotions" into a List
@@ -47,7 +90,7 @@ namespace AssurityAssignment
             //Loop "Promotions" elements
             foreach (var promotion in promotionsList)
             {
-                if (promotion.Name.ToString()==criteriaPromName && promotion.Description.ToString()==criteriaPromDescription)
+                if (promotion.Name.ToString() == criteriaPromName && promotion.Description.ToString() == criteriaPromDescription)
                 {
                     return;
                 }
@@ -55,8 +98,6 @@ namespace AssurityAssignment
 
             //Assert
             //Verify the tested method behaves as expected
-            Assert.AreEqual(criteriaName, apiContents.Name);
-            Assert.AreEqual(criteriaCanRelist, apiContents.CanRelist);
             Assert.AreEqual(criteriaPromName, apipromotions.Name.ToString());
             Assert.AreEqual(criteriaPromDescription, apipromotions.Description.ToString());
 
