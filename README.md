@@ -22,6 +22,6 @@ https://api.tmsandbox.co.nz/v1/Categories/6328/Details.json?catalogue=false
 **Test Result**
 ![This is an image](TestResult.jpg)
 
-**Contact**
-Qiang Zhang
+**Contact <br/>**
+Qiang Zhang <br/>
 Project Link: [https://github.com/qiangnz/AssurityAssignment](https://github.com/qiangnz/AssurityAssignment)
