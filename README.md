@@ -22,5 +22,11 @@ https://api.tmsandbox.co.nz/v1/Categories/6328/Details.json?catalogue=false
 
 
 **Contact**
+<<<<<<< HEAD
 Qiang Zhang
+=======
+
+Qiang Zhang
+
+>>>>>>> 19e8e9873987b2b13e011dce834604e6b18e1a9d
 Project Link: [https://github.com/qiangnz/AssurityAssignment](https://github.com/qiangnz/AssurityAssignment)
