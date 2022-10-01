@@ -2,11 +2,11 @@
 Assurity Consulting 2023 Graduate Program
 
 **Unit Test Project(.NET Framework) <br/>**
-.NET Framework 4.7.2
+- .NET Framework 4.7.2
 
 **Dependenices <br/>**
-Newtonsoft.Json 13.0.1 <br/>
-RestSharp 108.0.2
+- Newtonsoft.Json 13.0.1 <br/>
+- RestSharp 108.0.2
 
 
 **Test API <br/>**
