@@ -19,7 +19,8 @@ https://api.tmsandbox.co.nz/v1/Categories/6328/Details.json?catalogue=false
 - The Promotions element with Name = "Feature" has a Description that contains the text "Better position in category"
 
 
-
+**Test Result**
+![This is an image](TestResult.jpg)
 
 **Contact**
 Qiang Zhang
